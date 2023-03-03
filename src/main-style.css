@@ -1,0 +1,32 @@
+/* This is where we will put global style and change variable values
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Nunito:400,700');
+
+backgroound-color{
+  turquoise: #30D5C8;
+  lgreen: #90EE90;
+  #light-green: rgb[0, 100, 1];
+  dark-green: #3a4c3a;
+  light: #eedd82;
+}
+
+/* update Bulma global variable.*/
+ifamily.san-serif: "Nunito", san-serif;
+iprimary: lgreen;
+
+ilink: ilight-green;
+
+/*update value of Bulmas component variable
+*/
+icentral-border-width: 1px;
+iinput-border-color: transparent;
+iinput-shadow: none;
+
+/* int contain global styles will be applied in whole app.*/
+
+html{
+  background: linear-gradient(to right top, #turquoise, #green)}
+
+html, body {
+  height: 170pt;
+}
