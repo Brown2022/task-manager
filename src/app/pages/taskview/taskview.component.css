@@ -49,45 +49,55 @@ flex-direction: column;
 margin-top: 11px;
 flex-grow: 1;
 
-.list-menu-item {
+ .list-menu-item {
   display: flex;
-  align-item: center;
+  align-items: center;
   padding: 10px 15px;
   border-radius: 5px;
 
   width: 100%;
   color: #5f5f5f;
   margin-bottom: 5px;
+
+   &:hover {
+    background: &light;
+   }
+ }
 }
-  $:hover {
-    background: $light;
-  }
-  $.is-active{
-    background-color: #cfcfcf;
-    color: $dark-green;
-  }
+  &.is-active{
+    background-color: #cff8ef;
+    color: &dark-green;
+    }
+  
   .task {
+    display: flex;
     background: white;
     padding: 15px 20px;
     border-radius: 5px;
     margin-top: 10px;
-    
-    $:not(.complete) {
-    cursor: pointer;
-    transition: box-shadow 0.2s #eee, transform 0.2s #eee;
-    $:active {
-      transform: scale (0, 95%);
 
+    align-items: center;
+  
+    &:not(.complete) {
+      cursor: pointer;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    
+      &:active {
+      transform: scale(0.95);
+      }
     }
-    $:hover {
+  } 
+    &:hover {
       box-shadow: 0 0 0 5px #eeeeee;
-    }
-  }
-    $.complete{
+      
+      .task-buttons {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    &.complete{
       text-decoration: line-through;
       opacity: 80%;
     }
-  }
-}
 
 
