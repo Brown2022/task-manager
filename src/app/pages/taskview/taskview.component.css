@@ -60,13 +60,13 @@ flex-grow: 1;
   margin-bottom: 5px;
 
    &:hover {
-    background: &light;
+    background: $light;
    }
  }
 }
   &.is-active{
     background-color: #cff8ef;
-    color: &dark-green;
+    color: $dark-green;
     }
   
   .task {
