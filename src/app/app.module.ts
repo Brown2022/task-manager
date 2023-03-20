@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TaskviewComponent } from './pages/taskview/taskview.component';
-
+import { HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +12,8 @@ import { TaskviewComponent } from './pages/taskview/taskview.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
